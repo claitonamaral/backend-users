@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5001;
 app.use(cors());
 app.use(express.json());
 
-const db = new sqlite3.Database('./database/users.db');        
+const db = new sqlite3.Database('./src/database/users.db');        
 
 // Criação da tabela
 db.serialize(() => {
